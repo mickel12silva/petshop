@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PetJoy - Pet Shop</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#" data-route="home" aria-label="PetJoy Home">
+        <!-- SVG logo: creative paw -->
+        <svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#9fd7f0"/>
+              <stop offset="1" stop-color="#ffd39b"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+          <path d="M22 26c0-4 3.2-7 7-7s7 3 7 7-3 7-7 7-7-3-7-7z" fill="#fff"/>
+          <path d="M13 19c2.8-3 7.8-3 10.6 0 2.8 3 2.8 7.8 0 10.8S15.8 30 13 27c-2.8-3-2.8-7.8 0-10.8z" fill="#fff"/>
+          <path d="M51 19c-2.8-3-7.8-3-10.6 0-2.8 3-2.8 7.8 0 10.8s10.6 2.2 13.4-0.8c2.8-3 2.8-7.8 0-10.8z" fill="#fff"/>
+          <path d="M20 41c1.8-5.5 6.8-9 12-9s10.2 3.5 12 9c1.05 3.2-0.86 6.6-3.9 7.8-2.9 1.1-6.2 1.7-10.1 1.7s-7.2-0.6-10.1-1.7C20.86 47.6 18.95 44.2 20 41z" fill="#fff"/>
+        </svg>
+        <span class="brand-name">PetJoy</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#" class="nav-link" data-route="home">Home</a>
+        <a href="#" class="nav-link" data-route="caes">Cães</a>
+        <a href="#" class="nav-link" data-route="gatos">Gatos</a>
+      </nav>
+
+      <button class="icon-btn search-btn" aria-label="Buscar">
+        <!-- simple search icon -->
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M10.5 3a7.5 7.5 0 015.96 12.04l4.25 4.25-1.42 1.42-4.25-4.25A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" fill="#3b6b8a"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="main">
+    <!-- Home view -->
+    <section id="view-home" class="view active">
+      <div class="hero">
+        <h1>Bem-vindo à PetJoy</h1>
+        <p>Cuidado carinhoso para cães e gatos — produtos, serviços e amor de sobra.</p>
+      </div>
+
+      <div class="preview-cards">
+        <div class="card preview">
+          <h3>Cães</h3>
+          <p>Descubra raças, dicas e produtos para seu melhor amigo.</p>
+          <button class="btn" data-route="caes">Ver Cães</button>
+        </div>
+        <div class="card preview">
+          <h3>Gatos</h3>
+          <p>Estilo, conforto e bem-estar para felinos exigentes.</p>
+          <button class="btn" data-route="gatos">Ver Gatos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cães view -->
+    <section id="view-caes" class="view">
+      <h2 class="page-title">Cães</h2>
+      <div class="cards-grid">
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/golden.jpg" alt="Golden Retriever" />
+          </div>
+          <div class="card-body">
+            <h3>Golden Retriever</h3>
+            <p>O companheiro dourado e dócil.</p>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/border.jpg" alt="Border Collie" />
+          </div>
+          <div class="card-body">
+            <h3>Border Collie</h3>
+            <p>A inteligência em forma de cão.</p>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/buldogue.jpg" alt="Bulldog Francês" />
+          </div>
+          <div class="card-body">
+            <h3>Bulldog Francês</h3>
+            <p>Pequeno no tamanho, gigante no carisma.</p>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/poddle.png" alt="Poodle" />
+          </div>
+          <div class="card-body">
+            <h3>Poodle</h3>
+            <p>Elegância e versatilidade para a família.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gatos view -->
+    <section id="view-gatos" class="view">
+      <h2 class="page-title">Gatos</h2>
+      <div class="cards-grid">
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/persa.jpg" alt="Persa" />
+          </div>
+          <div class="card-body">
+            <h3>Persa</h3>
+            <p>O rei da tranquilidade e pelos luxuosos.</p>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/maine.jpg" alt="Maine Coon" />
+          </div>
+          <div class="card-body">
+            <h3>Maine Coon</h3>
+            <p>O gigante gentil do mundo felino.</p>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/siames.jpg" alt="Siamês" />
+          </div>
+          <div class="card-body">
+            <h3>Siamês</h3>
+            <p>Personalidade forte e olhos marcantes.</p>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <div class="card-media">
+            <img src="./img/bengal.jpg" alt="Bengal" />
+          </div>
+          <div class="card-body">
+            <h3>Bengal</h3>
+            <p>A aparência selvagem com o carinho de casa.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="contact">
+        <div class="contacts">
+          <strong>Contato</strong>
+          <a href="tel:4002-8922">4002-8922</a>
+          <a href="mailto:contato@petjoy.com">contato@petjoy.com</a>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a class="social" href="#" aria-label="Instagram">
+          <!-- Instagram circle -->
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" fill="#fff" opacity="0.06"/>
+            <path d="M12 8.2a3.8 3.8 0 100 7.6 3.8 3.8 0 000-7.6zM17.6 6.2a.9.9 0 11-1.8 0 .9.9 0 011.8 0z" fill="#fff" />
+          </svg>
+          <span>Instagram</span>
+        </a>
+
+        <a class="social" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M22 12a10 10 0 10-11.5 9.9v-7H8.2v-2.9h2.2V9.5c0-2.2 1.3-3.5 3.3-3.5.95 0 1.95.17 1.95.17v2.1H15.9c-1.08 0-1.42.67-1.42 1.36v1.64h2.42l-.39 2.9h-2.03v7A10 10 0 0022 12z" fill="#fff"/>
+          </svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© PetJoy • Rua Jamaki, 111 • São Paulo, SP</small>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp-fab" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path fill="#fff" d="M20.52 3.48A11.93 11.93 0 0012 .5a11.99 11.99 0 00-10.67 6.59c-1.13 2.26-.9 4.9.6 7.2L.5 23.5l9.34-2.46c2.2 1.2 4.78 1.24 6.99.13A11.98 11.98 0 0024 12c0-1.28-.23-2.53-.68-3.73a12.07 12.07 0 00-2.8-4.79zM12 21.5a9.75 9.75 0 01-5.05-1.36l-.36-.21-5.55 1.46 1.46-5.41-.24-.36A9.75 9.75 0 1112 21.5z"/>
+      <path fill="#25D366" d="M17.7 14.1c-.5-.24-2.96-1.47-3.42-1.64-.46-.18-.79-.24-1.12.24s-1.28 1.64-1.57 1.97c-.29.34-.59.37-1.09.12-.5-.25-2.02-.74-3.85-2.37-1.42-1.36-1.28-2.44-.28-3.11.87-.58 1.93-.6 2.52-.61.63-.01.98-.01 1.42.01.45.03.8.06 1.15-.01.35-.07 1.07-.39 1.65-.59.58-.2.99-.35 1.42-.01.43.34 1.64 1.56 1.86 1.88.22.32.36.72.24 1.11-.11.39-.62 1.35-.72 1.5-.11.15-.18.24-.36.12z" opacity="0.0"/>
+    </svg>
+  </a>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
